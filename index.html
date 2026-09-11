@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maki Zen'in</title>
+
+  <!-- Tailwind CSS & Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Noto+Sans+JP:wght@900&family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .font-orbitron {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .font-rajdhani {
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    .font-kanji {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .font-code {
+      font-family: 'Fira Code', monospace;
+    }
+
+    /* درخشش‌های نئونی قرمز */
+    .glow-red-text {
+      text-shadow: 0 0 15px rgba(239, 68, 68, 0.8), 0 0 30px rgba(220, 38, 38, 0.5);
+    }
+
+    .glow-white-text {
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+    }
+
+    .glow-red-box {
+      box-shadow: 0 0 25px rgba(220, 38, 38, 0.4);
+    }
+
+    .glow-circle {
+      box-shadow: 0 0 80px rgba(220, 38, 38, 0.8), inset 0 0 40px rgba(185, 28, 28, 0.9);
+    }
+
+    /* بافت پس‌زمینه کثیف/دود */
+    .bg-dark-mesh {
+      background-color: #060608;
+      background-image:
+        radial-gradient(circle at 50% 50%, rgba(220, 38, 38, 0.25) 0%, transparent 60%),
+        radial-gradient(circle at 10% 20%, rgba(185, 28, 28, 0.15) 0%, transparent 40%);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-dark-mesh text-white min-h-screen flex flex-col justify-between font-rajdhani overflow-x-hidden relative select-none">
+
+  <!-- افکت پاشش رنگ/دود لایه پس‌زمینه -->
+  <div
+    class="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent">
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="flex justify-between items-center px-8 md:px-16 py-6 z-30 relative">
+    <div class="flex items-center gap-3">
+      <h1 class="font-orbitron text-2xl font-black tracking-widest text-white glow-white-text">JUJUTSU</h1>
+
+    </div>
+
+    <nav class="hidden md:flex gap-10 font-bold text-gray-300 tracking-widest uppercase text-xs">
+      <a href="#" class="text-white border-b-2 border-red-600 pb-1 font-orbitron">Home</a>
+      <a href="#" class="hover:text-red-500 transition-colors pb-1">Sorcerers</a>
+      <a href="#" class="hover:text-red-500 transition-colors pb-1">Clans</a>
+      <a href="#" class="hover:text-red-500 transition-colors pb-1">Archives</a>
+    </nav>
+
+    <button class="md:hidden text-xl text-white"><i class="fa-solid fa-bars"></i></button>
+  </header>
+  <div class=" w-[18rem] h-[3px] bg-red-600"></div>
+
+  <!-- Main Content Area -->
+  <main class="relative flex-1 flex items-center justify-between px-8 md:px-16 lg:px-24 z-10">
+
+    <!-- Left Column: Title & Text -->
+    <div class="z-20 max-w-lg space-y-5 my-auto">
+      <span class="font-orbitron text-xs font-bold uppercase text-red-500 tracking-[0.3em] block glow-red-text">
+        // JUJUTSU KAISEN
+      </span>
+
+      <h2
+        class="font-orbitron text-5xl sm:text-7xl font-black leading-none uppercase tracking-tight text-white glow-white-text">
+        HEAVENLY<br>
+        <span class="text-red-600 glow-red-text">RESTRICTION</span>
+      </h2>
+
+      <p class="text-gray-300 text-base sm:text-lg font-semibold leading-relaxed max-w-md">
+        Born with zero cursed energy, Maki Zen'in forged her strength through blood and steel to break the chains of the
+        Zen'in clan.
+      </p>
+
+      <div class="pt-2">
+        <button
+          class="font-orbitron border-2 border-red-600 rounded-full px-8 py-3 font-bold text-xs tracking-widest uppercase text-white hover:bg-red-600 hover:shadow-[0_0_20px_rgba(220,38,38,0.8)] transition-all duration-300 flex items-center gap-3 group">
+          <span>EXPLORE STORY</span>
+          <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Center Column: Red Sun & Character -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+      <div class="relative w-80 h-80 sm:w-[460px] sm:h-[460px] flex items-center justify-center">
+
+        <!-- خورشید قرمز نئونی -->
+        <div class="absolute w-full h-full bg-red-600 rounded-full glow-circle"></div>
+
+        <!-- کانجی ژاپنی در سمت راست خورشید -->
+        <div
+          class="absolute -right-24 top-1/4 flex flex-col font-kanji text-5xl font-black text-red-600/80 tracking-widest pointer-events-none glow-red-text select-none">
+          <span>禪</span>
+          <span>院</span>
+        </div>
+
+        <!-- عکس کاراکتر ماکی -->
+        <img src="./۱.png" alt="Maki Zenin"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[105vh] max-h-[850px] object-contain z-20 filter brightness-110 contrast-125 drop-shadow-[0_10px_35px_rgba(0,0,0,0.9)]">
+
+      </div>
+    </div>
+
+
+
+    <!-- Bottom Right Badge: Tech Stack Info -->
+
+
+    <!-- Right Column: Navigation Controls -->
+    <div class="z-20 flex flex-col items-center gap-4 font-orbitron my-auto">
+      <div class="flex flex-col items-center gap-1">
+        <span class="text-2xl font-black text-white glow-white-text">01</span>
+        <div class="w-6 h-[2px] bg-red-600 my-0.5 glow-red-box"></div>
+        <span class="text-sm font-bold text-gray-500">02</span>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <button
+          class="w-11 h-11 bg-black/60 backdrop-blur-md border border-red-600/60 flex items-center justify-center rounded-full text-white shadow-[0_0_15px_rgba(220,38,38,0.4)] hover:bg-red-600 hover:shadow-[0_0_25px_rgba(220,38,38,0.8)] hover:scale-110 active:scale-95 transition-all duration-300 group">
+          <i class="fa-solid fa-chevron-up text-sm group-hover:-translate-y-0.5 transition-transform"></i>
+        </button>
+        <button
+          class="w-11 h-11 bg-black/60 backdrop-blur-md border border-red-600/60 flex items-center justify-center rounded-full text-white shadow-[0_0_15px_rgba(220,38,38,0.4)] hover:bg-red-600 hover:shadow-[0_0_25px_rgba(220,38,38,0.8)] hover:scale-110 active:scale-95 transition-all duration-300 group">
+          <i class="fa-solid fa-chevron-down text-sm group-hover:translate-y-0.5 transition-transform"></i>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+
+
+</body>
+
+</html>

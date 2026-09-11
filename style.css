@@ -1,0 +1,49 @@
+/* ===========font=============== */
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+.font-rajdhani {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.font-kanji {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.font-code {
+  font-family: "Fira Code", monospace;
+}
+
+
+/* ================color==================== */
+.glow-red-text {
+  text-shadow: 0 0 15px rgba(239, 68, 68, 0.8), 0 0 30px rgba(220, 38, 38, 0.5);
+}
+
+.glow-white-text {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.glow-red-box {
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.4);
+}
+
+.glow-circle {
+  box-shadow: 0 0 80px rgba(220, 38, 38, 0.8),
+    inset 0 0 40px rgba(185, 28, 28, 0.9);
+}
+
+.bg-dark-mesh {
+  background-color: #060608;
+  background-image: radial-gradient(
+      circle at 50% 50%,
+      rgba(220, 38, 38, 0.25) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(185, 28, 28, 0.15) 0%,
+      transparent 40%
+    );
+}
